@@ -79,7 +79,7 @@
 }
 
 .about-exp__container {
-    max-width: 75%;
+    width: 75%;
     font-size: var(--base-size);
     align-self: center;
     text-align: center;
@@ -90,6 +90,7 @@
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
     grid-area: exp;
+    border: 1px solid red;
 }
 
 .about-exp__header {
