@@ -87,8 +87,8 @@
 }
 
 /* xxl screen */
-@media (min-width: 1536px) {
+@media (min-width: 1920px) {
     .container {
-        max-width: 1280px;
+        max-width: 1500px;
     }
 }

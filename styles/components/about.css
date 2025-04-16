@@ -19,29 +19,34 @@
 
 .about__ul {
     font-size: var(--sm-size);
-    grid-area: zakres;
-    list-style-type: none;
-
+    color: var(--gray400-clr);
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     'header header header'
     'html js css'
     'python react c'
-    'sql  ps ps';
+    'sql ps ps';
     gap: 1rem;
-    text-align: center;
-    border: 1px solid #002855;
-    background: var(--palebg-clr);
-    color: var(--gray400-clr);
+    padding: 1em;
     margin: 1rem auto;
-    padding: 1rem;
-    box-shadow: 0 0 20px #002855;
+    
     width: 75%;
+    background: var(--palebg-clr);
+    box-shadow: 0 0 20px #002855;
+    border: 1px solid #002855;
+    grid-area: zakres;
+}
+
+.about-li__sql {
+    text-align: right;
 }
 
 .about-ul__header {
+    color: var(--gray400-clr);
     font-size: var(--lg-size);
+    margin-bottom: 0.5rem;
     grid-area: header;
 }
 
@@ -74,6 +79,7 @@
 }
 
 .about-exp__container {
+    max-width: 75%;
     font-size: var(--base-size);
     align-self: center;
     text-align: center;
@@ -159,119 +165,19 @@
 }
 
 /* xs screen */
-@media (min-width: 475px) {
-    .about {
-        display: flex;
-        max-width: 475px;
-        flex-direction: column;
-        margin-bottom: 2rem;
-    }
-    
-    .about__description {
-        font-size: var(--base-size);
-        align-self: center;
-        text-align: center;
-        max-width: 75%;
-        border: 1px solid #002855;
-        background: var(--palebg-clr);
-        color: var(--gray400-clr);
-        padding: 1em;
-        margin: 1rem auto;
-        box-shadow: 0 0 20px #002855;
-    }
-    
+@media (min-width: 475px) { /* mój telefon 475x865 */
     .about__ul {
-        font-size: var(--lg-size);
-        grid-area: zakres;
-        list-style-type: none;
-    
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        'header header header'
-        'html js css'
-        'python react c'
-        'sql  ps ps';
-        gap: 1rem;
-        text-align: center;
-        border: 1px solid #002855;
-        background: var(--palebg-clr);
-        color: var(--gray400-clr);
-        margin: 1rem auto;
+        font-size: var(--base-size);
         padding: 1rem 3rem;
-        box-shadow: 0 0 20px #002855;
-        width: 75%;
     }
     
     .about-ul__header {
-        font-size: var(--xl-size);
-        grid-area: header;
+        font-size: var(--lg-size);
     } 
-    .about-exp__container {
-        font-size: var(--base-size);
-        align-self: center;
-        text-align: center;
-        max-width: 75%;
-        border: 1px solid #002855;
-        background: var(--palebg-clr);
-        color: var(--gray400-clr);
-        padding: 1rem;
-        margin: 1rem auto;
-        box-shadow: 0 0 20px #002855;
-        grid-area: exp;
-    }
-    
-    .about-exp__header {
-        font-size: var(--xl-size);
-    }
-    
-    .about-school__container {
-        font-size: var(--base-size);
-        text-align: center;
-        max-width: 75%;
-        border: 1px solid #002855;
-        background: var(--palebg-clr);
-        color: var(--gray400-clr);
-        padding: 1rem;
-        margin: 1rem auto;
-        box-shadow: 0 0 20px #002855;
-        grid-area: school;
-    }
-    
-    .about__me {
-        font-size: var(--base-size);
-        align-self: center;
-        text-align: center;
-        max-width: 75%;
-        border: 1px solid #002855;
-        background: var(--palebg-clr);
-        color: var(--gray400-clr);
-        padding: 1rem;
-        margin: 1rem auto;
-        box-shadow: 0 0 20px #002855;
-    }
-    
-    .about-me__header {
-        font-size: var(--xl-size);
-    }
 }
 
 /* sm screen */
 @media (min-width: 768px) {
-    .about { max-width: 768px; }
-
-    .about__ul {
-        font-size: var(--base-size);
-        gap: 1rem;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: 
-        'header header header header'
-        'html js js css'
-        'python react react c'
-        'sql sql ps ps';
-        width: 75%;
-    }
-
     .about-ul__header {
         font-size: var(--xl-size);
     }
@@ -280,7 +186,7 @@
         font-size: var(--lg-size);
         gap: 0.5rem;
         width: 75%;
-        padding: 1rem 10rem;
+        padding: 1rem 5rem;
     }
 }
 
@@ -289,7 +195,7 @@
     .about {
         max-width: 1024px;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         'desc ul'
         'exp school'
@@ -301,7 +207,6 @@
         grid-area: desc;
         margin: 1rem auto;
         padding: 1rem;
-        width: 75%;
         font-size: var(--lg-size);
     }
 
@@ -309,42 +214,20 @@
         grid-area: ul;
         margin: 1rem auto;
         padding: 1rem 4rem;
-        width: 75%;
-        font-size: var(--lg-size);
-    }
-
-    .about-ul__header {
-        font-size: var(--xl-size);
     }
 
     .about-exp__container {
-        grid-area: exp;
-        margin: 1rem auto;
-        padding: 1rem;
-        width: 75%;
         font-size: var(--lg-size);
     }
 
     .about-school__container {
-        grid-area: school;
-        margin: 1rem auto;
-        padding: 1rem;
-        width: 75%;
         font-size: var(--lg-size);
     }
 
     .about__me {
         grid-area: aboutme;
-        margin: 1rem auto;
-        padding: 1rem;
         max-width: none;
         width: 88%;
         font-size: var(--lg-size);
     }
 }
-
-/* xl screen  komputer */
-/* @media (min-width: 1280px) {} */
-
-/* xxl screen */
-/* @media (min-width: 1536px) {} */
