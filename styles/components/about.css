@@ -26,8 +26,8 @@
     grid-template-areas: 
     'header header header'
     'html js css'
-    'python react c'
-    'sql ps ps';
+    'python react angular'
+    'sql sql c';
     gap: 1rem;
     padding: 1em;
     margin: 1rem auto;
@@ -37,10 +37,6 @@
     box-shadow: 0 0 20px #002855;
     border: 1px solid #002855;
     grid-area: zakres;
-}
-
-.about-li__sql {
-    text-align: right;
 }
 
 .about-ul__header {
@@ -67,6 +63,7 @@
 }
 
 .about-li__c {
+    text-align: left;
     grid-area: c;
 }
 
@@ -74,8 +71,8 @@
     grid-area: sql;
 }
 
-.about-li__photoshop {
-    grid-area: ps;
+.about-li__angular {
+    grid-area: angular;
 }
 
 .about-exp__container {

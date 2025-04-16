@@ -27,18 +27,14 @@
     font-size: var(--base-size);
 }
 
-.future-3month__ul {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-}
-
+.future-3month__ul,
 .future-6month__ul {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
+    gap: 0.75rem;
     justify-content: center;
+    font-size: var(--xxs-size);
+    
 }
 
 .future_1month {
@@ -69,7 +65,7 @@
     padding: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0px 0px 15px var(--gray800-clr);
+    animation: AnimateShadow infinite forwards 10s ease-in-out alternate;
 }
 
 /* md screen */
@@ -95,11 +91,9 @@
         font-size: var(--xl-size);
     }
 
-    .future_1month > p,
-    .future_3month > p,
-    .future_6month > p {
+    .month_desc {
         font-size: var(--base-size);
-        padding: 1.25rem;
+        padding: 1rem;
         margin-bottom: 1rem;
         margin-top: 1.75rem;
         box-shadow: 5px -5px 15px var(--gray800-clr);
@@ -124,8 +118,9 @@
     .future__header { font-size: var(--xl4-size); }
     .month__header { font-size: var(--xl3-size); }
 
-    .future__ul { font-size: var(--lg-size); }
+    .future__ul { font-size: var(--xl-size); }
     .future-1month__ul { font-size: var(--xl-size); }
+    
 }
 
 /* xl screen */
@@ -139,4 +134,39 @@
 
     .future__ul { font-size: var(--lg-size); }
     .future-1month__ul { font-size: var(--xl-size); }
+}
+
+/* xxl screen */
+@media (min-width: 1536px) {
+    .month__container {
+        max-width: 1536px;
+    }
+    .future__header { font-size: var(--xl5-size); }
+    .month__header { font-size: var(--xl4-size); }
+    .month-container__item { max-width: 55ch; }
+    .month__desc { font-size: var(--lg-size); padding: 1.5rem; }
+
+    .future__ul { font-size: var(--xl-size); }
+    .future-1month__ul { font-size: var(--xl2-size); }
+}
+
+@keyframes AnimateShadow {
+    0% {
+        border: 1px solid #2b2a53;
+        box-shadow: 0px 0px 15px #1f2937;
+    }
+
+    100% {
+        border: 1px solid #1f2937;
+        box-shadow: 0px 0px 15px #2b2a53;
+    }
+
+    /* --light-clr: #f9fafb;
+    --dark-clr: #040916;
+    --palebg-clr: #090d2871;
+    --gray400-clr: #9ca3af;
+    --gray600-clr: #4b5563;
+    --gray800-clr: #1f2937;
+    --pink-clr: #9d174d;
+    --blue-clr: #3730a3; */
 }
