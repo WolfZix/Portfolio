@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    user-select: none;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__bars {
+    display: block;
+    color: var(--light-clr);
+    width: var(--xl2-size);
+    height: var(--xl2-size);
+}
+
+/* xs screen */
+/* @media (min-width: 475px) {} */
+
+/* sm screen */
+/* @media (min-width: 640px) {} */
+
+/* md screen */
+@media (min-width: 768px) {
+    .header__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 2em;
+    }
+    
+    .header__link {
+        font-size: var(--xs-size);
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--gray600-clr);
+        letter-spacing: -0.05em;
+        transition: color 0.3s;
+    }
+    
+    .header__link:hover {
+        color: var(--pink-clr);
+    }
+    
+    .header__line {
+        border: 1px solid var(--gray600-clr);
+        padding-top: 1.5em;
+    }
+    
+    .header__sun {
+        display: block;
+        color: var(--gray600-clr);
+        width: var(--base-size);
+        height: var(--base-size);
+    }
+    
+    .header__resume {
+        font-size: var(--xs-size);
+    }
+
+    .header__bars {
+        display: none;
+    }
+}
+
+/* lg screen */
+@media (min-width: 1024px) {
+    .header__link {
+        font-size: var(--sm-size);
+    }
+    
+    .header__sun {
+        width: var(--xl-size);
+        height: var(--xl-size);
+    }
+    
+    .header__resume {
+        font-size: var(--sm-size);
+    }
+}
+
+/* xl screen */
+/* @media (min-width: 1280px) {} */
+
+/* xxl screen */
+/* @media (min-width: 1536px) {} */

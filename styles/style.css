@@ -1,0 +1,69 @@
+:root {
+    --light-clr: #f9fafb;
+    --dark-clr: #040916;
+    --palebg-clr: #090d2871;
+    --gray400-clr: #9ca3af;
+    --gray600-clr: #4b5563;
+    --gray800-clr: #1f2937;
+    --pink-clr: #9d174d;
+    --blue-clr: #3730a3;
+
+    --xxs-size: 0.5rem;
+    --xs-size: 0.75rem;
+    --sm-size: 0.875rem;
+    --base-size: 1rem;
+    --lg-size: 1.125rem;
+    --xl-size: 1.25rem;
+    --xl2-size: 1.5rem;
+    --xl3-size: 1.875rem;
+    --xl4-size: 2.25rem;
+    --xl5-size: 3rem;
+    --xl6-size: 3.75rem;
+    --xl7-size: 4.5rem;
+    --xl8-size: 6rem;
+    --xl9-size: 8rem;
+    --xl10-size: 10rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--dark-clr);
+    color: var(--light-clr);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a {
+    color: var(--pink-clr);
+}
+
+strong {
+    color: var(--blue-clr);
+}
