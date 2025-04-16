@@ -90,7 +90,6 @@
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
     grid-area: exp;
-    border: 1px solid red;
 }
 
 .about-exp__header {

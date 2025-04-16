@@ -96,7 +96,7 @@
       <div class="line"></div>
       <section>
         <div id="featured" class="work section">
-          <h1 class="work__header">Moje Projekty</h1>
+          <h1 class="work__header_first">Moje Projekty</h1>
           <!-- ITEM 1 -->
           <div class="work__desc1 desc">
             <h3>Poziom nauki: Grid/Flex layout</h3>
@@ -150,7 +150,7 @@
       </section>
       <div class="line"></div>
       <section>
-        <div class="future container">
+        <div class="future">
           <h1 class="future__header">Future Plans</h1>
           <div class="future__ul">
             <p class="future-ul__item li1"><a href="#1month">Najbliższy miesiac</a></p>
@@ -163,23 +163,31 @@
               <p class="future-ul__item li1"><a href="#wordpress">Wordpress</a></p>
             </div>
             <h1 class="month__header" id="wordpress">Wordpress</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente enim dolorum voluptatibus. Quod necessitatibus quia possimus, veniam rerum soluta odio doloribus amet labore assumenda similique tempore velit maxime officiis commodi beatae eius alias aut culpa, quibusdam unde autem illo nesciunt. Aliquam aliquid suscipit harum minus perspiciatis neque dolorem sit.</p>
+            <p class="month__desc">W najbliższym czasie chciałbym poświęcić trochę czasu na naukę Wordpress'a. Co chwilę słyszę, że to bardzo <strong>ułatwia</strong> pracę przy stronach i chciałbym to przetestować. Niektórzy zwrócili mi nawet czasem uwagę, że "czemu pisze strony manualnie". Zawsze odpowiadałem, że nie potrzebuje żadnego Wordpress'a, ale skoro to takie <strong>pomocne i popularne</strong> może warto by spróbować..?</p>
           </div>
           <div id="3month" class="future_3month">
-            <h1 class="month__header">Za trzy miesiące</h1>
+            <h1 class="month__header" id="za3mies">Za trzy miesiące</h1>
             <div class="future__ul future-3month__ul">
               <p class="future-ul__item li1"><a href="#NextJS">Next JS</a></p>
               <p class="future-ul__item li3"><a href="#TypeScript">TypeScript</a></p>
               <p class="future-ul__item li2"><a href="#Astro">Astro</a></p>
             </div>
-            <h1 class="month__header">Next JS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente enim dolorum voluptatibus. Quod necessitatibus quia possimus, veniam rerum soluta odio doloribus amet labore assumenda similique tempore velit maxime officiis commodi beatae eius alias aut culpa, quibusdam unde autem illo nesciunt. Aliquam aliquid suscipit harum minus perspiciatis neque dolorem sit.</p>
+            <div class="month__container">
+              <div class="month-container__item">
+                <h1 class="month__header">Next JS</h1>
+                <p class="month__desc">Jako młody człowiek, którego pasją jest programowanie, chcę się <strong>rozwijać</strong>. Kilka razy obiły mi się o uszy słowa "Next JS" i chciałbym się tego nauczyć. Ponoć jest to ważna i potrzebna rzecz jeśli chodzi o <strong>Web Development.</strong> Szybko się uczę nowych rzeczy więc powinienem sobie poradzić z przyswojeniem nowego materiału w około miesiąc. </p>
+              </div>
 
-            <h1 class="month__header">TypeScript</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente enim dolorum voluptatibus. Quod necessitatibus quia possimus, veniam rerum soluta odio doloribus amet labore assumenda similique tempore velit maxime officiis commodi beatae eius alias aut culpa, quibusdam unde autem illo nesciunt. Aliquam aliquid suscipit harum minus perspiciatis neque dolorem sit.</p>
+              <div class="month-container__item">
+                <h1 class="month__header">Typescript</h1>
+                <p class="month__desc">Kolejną rzeczą do nauki w kierunku zostania dobrym <strong>Web Developerem</strong> byłby TypeScript. Wydaje mi się, że jest on ściśle powiązany z wcześniej wspomnianym Next JS, dlatego dodałem go do listy rzeczy do opanowania w ciągu najbliższych trzech miesięcy. Tak jak Next JS, jest to technologia oparta na <strong>JavaScripcie</strong>, więc nauka będzie dla mnie czystą przyjemnością.</p>
+              </div>
 
-            <h1 class="month__header">Astro</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente enim dolorum voluptatibus. Quod necessitatibus quia possimus, veniam rerum soluta odio doloribus amet labore assumenda similique tempore velit maxime officiis commodi beatae eius alias aut culpa, quibusdam unde autem illo nesciunt. Aliquam aliquid suscipit harum minus perspiciatis neque dolorem sit.</p>
+              <div class="month-container__item">
+                <h1 class="month__header">Astro</h1>
+                <p class="month__desc">Ostatnią rzeczą na te trzy miesiące, którą chcę opanować, jest Astro. Nowoczesny <strong>framework</strong> do budowania stron internetowych. Jego podejście do <strong>wydajności</strong> i dzielenie kodu na mniejsze części mnie zaciekawiło. W najbliższych miesiącach planuję nauczyć się podstaw i stworzyć <strong>własny projekt</strong> z jego wykorzystaniem.</p>
+              </div>
+            </div>
           </div>
           <div id="6month" class="future_6month">
             <h1 class="month__header">Za sześć miesięcy</h1>
@@ -188,14 +196,22 @@
               <p class="future-ul__item li3"><a href="#3month">Postgress</a></p>
               <p class="future-ul__item li2"><a href="#6month">Kurs Python</a></p>
             </div>
-            <h1 class="month__header">Drizzle</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente enim dolorum voluptatibus. Quod necessitatibus quia possimus, veniam rerum soluta odio doloribus amet labore assumenda similique tempore velit maxime officiis commodi beatae eius alias aut culpa, quibusdam unde autem illo nesciunt. Aliquam aliquid suscipit harum minus perspiciatis neque dolorem sit.</p>
+            <div class="month__container">
+              <div class="month-container__item">
+                <h1 class="month__header">Drizzle</h1>
+                <p class="month__desc">Drizzle zaciekawiło mnie przez swoją <strong>lekkość i czytelność.</strong> Lubię, gdy praca z bazą danych nie wymaga pisania skomplikowanego kodu. Proste podejście do relacji i wygodne typowanie sprawiają, że korzystanie z Drizzle jest dla mnie <strong>przyjemne i logiczne.</strong></p>
+              </div>
 
-            <h1 class="month__header">Postgress</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente enim dolorum voluptatibus. Quod necessitatibus quia possimus, veniam rerum soluta odio doloribus amet labore assumenda similique tempore velit maxime officiis commodi beatae eius alias aut culpa, quibusdam unde autem illo nesciunt. Aliquam aliquid suscipit harum minus perspiciatis neque dolorem sit.</p>
+              <div class="month-container__item">
+                <h1 class="month__header">Postgress</h1>
+                <p class="month__desc">Mam już podstawową wiedzę na temat PostgreSQL, którą zdobyłem <strong>w szkole</strong>. Potrafię wykonywać podstawowe operacje, takie jak tworzenie tabel i zapytania SELECT oraz DELETE. Chciałbym teraz zgłębić bardziej <strong>zaawansowane</strong> funkcje tej bazy danych.</p>
+              </div>
 
-            <h1 class="month__header">Kurs Python</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente enim dolorum voluptatibus. Quod necessitatibus quia possimus, veniam rerum soluta odio doloribus amet labore assumenda similique tempore velit maxime officiis commodi beatae eius alias aut culpa, quibusdam unde autem illo nesciunt. Aliquam aliquid suscipit harum minus perspiciatis neque dolorem sit.</p>
+              <div class="month-container__item">
+                <h1 class="month__header">Kurs Python</h1>
+                <p class="month__desc">Mam już <strong>dobrą</strong> znajomość Pythona, którą też mam ze szkoły i z pisania własnych projektów. <strong>Potrafię</strong> pisać skrypty, korzystać z popularnych bibliotek i rozwiązywać problemy algorytmiczne. Chciałbym teraz pogłębić swoją wiedzę o <strong>frameworkach</strong> takich jak Django czy Flask.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
