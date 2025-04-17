@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    font-size: var(--xs-size);
+    background: #0811293b;
+    color: var(--gray800-clr);
+    padding: .5rem;
+}
+
+/* md screen */
+@media (min-width: 768px) { footer { font-size: var(--xs-size); }}
+
+/* xxl screen */
+@media (min-width: 1536px) { footer { font-size: var(--base-size); }}

@@ -46,49 +46,25 @@
 .line {
     width: 90%;
     height: 1px;
-    margin: 5rem auto;
+    margin: 1rem auto;
     background-color: #151d5953;
     box-shadow: 0 0 10px #151d59d3;
 }
 
 /* xs screen */
-@media (min-width: 475px) {
-    .container {
-        max-width: 475px;
-    }
-}
+@media (min-width: 475px) { .container { max-width: 475px; }}
 
 /* sm screen */
-@media (min-width: 640px) {
-    .container {
-        max-width: 640px;
-    }
-}
+@media (min-width: 640px) { .container { max-width: 640px; } .line {margin: 1.5rem auto; }}
 
 /* md screen */
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
+@media (min-width: 768px) { .container { max-width: 768px; }}
 
 /* lg screen */
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
-    }
-}
+@media (min-width: 1024px) { .container { max-width: 1024px; } .line {margin: 2rem auto; }}
 
 /* xl screen */
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-}
+@media (min-width: 1280px) { .container { max-width: 1280px; } }
 
 /* xxl screen */
-@media (min-width: 1920px) {
-    .container {
-        max-width: 1500px;
-    }
-}
+@media (min-width: 1536px) {  .container { max-width: 1536px; } .line {margin: 3rem auto; }}
