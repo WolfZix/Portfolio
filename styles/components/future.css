@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: 1rem;
     color: var(--gray400-clr);
+    align-items: center;
 }
 
 .future__header {
@@ -58,19 +59,18 @@
 }
 
 .month__desc {
+    max-width: 50%;
     color: var(--gray600-clr);
     font-size: var(--sm-size);
     border-radius: 0px 50px;
     padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
     animation: AnimateShadow infinite forwards 3s ease-in-out alternate;
 }
 
 /* md screen */
 @media (min-width: 768px) {
     .future {
-        max-width: 75%;
         margin: 0 auto;
     }
 
@@ -90,7 +90,8 @@
         font-size: var(--xl-size);
     }
 
-    .month_desc {
+    .month__desc {
+        max-width: 75%;
         font-size: var(--base-size);
         padding: 1rem;
         margin-bottom: 1rem;
@@ -101,6 +102,10 @@
 
 /* lg screen */
 @media (min-width: 1024px) {
+    .month__desc {
+        max-width: 100%;
+    }
+
     .month__container {
         display: flex;
         justify-content: space-evenly;
@@ -127,6 +132,11 @@
     .month__container {
         max-width: 1280px;
     }
+
+    .first {
+        width: 75%;
+    }
+
     .future__header { font-size: var(--xl4-size); }
     .month__header { font-size: var(--xl3-size); }
     .month-container__item { max-width: 45ch; }
@@ -140,6 +150,11 @@
     .month__container {
         max-width: 1536px;
     }
+
+    .first {
+        width: 60%;
+    }
+
     .future__header { font-size: var(--xl5-size); }
     .month__header { font-size: var(--xl4-size); }
     .month-container__item { max-width: 55ch; }

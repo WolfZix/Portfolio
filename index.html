@@ -74,7 +74,10 @@
       <div id="line" class="line"></div>
 
       <section id="about" class="about container section">
-        <p class="about__description loading">Nazywam się Patryk Domaszek i zacząłem się uczyć programowania pięć lat temu. Na przestrzeni pięciu lat <strong>nauczyłem się np: </strong> jak używać vite'a, stosować grid oraz flex layout, robić własne elementy w css, animacje i wiele innych.</p>
+        <div id="about-container" class="about__description loading">
+          <h3 class="about-description__header">O mnie</h3>
+          <p>Nazywam się Patryk Domaszek i zacząłem się uczyć programowania pięć lat temu. Na przestrzeni pięciu lat <strong>nauczyłem się np: </strong> jak używać vite'a, stosować grid oraz flex layout, robić własne elementy w css, animacje i wiele innych.</p>
+        </div>
           <div id="about-container" class="about__ul loading">
             <h3 class="about-ul__header">Mój zakres umiejętności</h3>
             <p class="about-li__html">HTML</p>
@@ -95,7 +98,7 @@
           <p class="about__school">Chodziłem do technikum ZSCHIE w Gdyni na kierunek <strong>programistyczny.</strong> Mimo kierunku ledwo czego się tam nauczyłem. Większość wiedzy zdobyłem sam. Ukończyłem szkołę z maturą wraz z Certyfikatami kwalifikacji zawodowej <strong>INF.04</strong> i <strong>INF.03</strong></p>
         </div>
         <div id="about-container" class="about__me loading">
-          <h3 class="about-me__header">Kilka słów o mnie..</h1>
+          <h3 class="about-me__header">Więcej o mnie..</h1>
           <p class="about-me__description">Nazywam się Patryk Domaszek i mam 19 lat. <strong>Sam</strong> zacząłem się uczyć <strong>programowania</strong> odkąd spodobało mi się to na początku szkoły średniej. Mogę z pewnością stwierdzić, iż jest to moja <strong>pasja.</strong> W ciągu tych pięciu lat nauczyłem się korzystać z narzędzi takich jak: <strong>VSCode, Visual Studio, Viete, GitHub</strong> oraz inne strony pomocnicze.<br><br></rb><b>Używanie ChatGpt:</b><br> ChatGpt to ogromna pomoc w <strong>programowaniu,</strong> nie da się ukryć, natomiast osobiście uważam, że nie powinien on <strong>zastępować</strong> naszej wiedzy tylko ją <strong>poszerzać</strong>. Korzystając z ChataGpt staram się pytać go w ostateczności jak naprawić błędy, potem pytam czemu akurat tak a nie inaczej i na koniec pytam o inne metody rozwiązań. W ten sposób <strong>uczę się na błędach</strong> i mam <strong>Fun</strong> z nauki.</p>
         </div>
       </section>
@@ -106,7 +109,7 @@
           <!-- ITEM 1 -->
           <div class="work__desc1 desc">
             <h3 id="work-header">Poziom nauki: Grid/Flex layout</h3>
-          <p>Moim pierwszym poważniejszym projektem było zadanie z klasy drugiej, które według mojego nauczyciela miało poziom studiów. Polegało na stworzeniu prostej strony w ReactJS, wyświetlającej dane z formularza przesyłane przez zapytania do serwera. Mimo że projekt był funkcjonalny, jego głównym minusem było użycie przestarzałych metod stylowania takich jak float: left/right, co skutkowało nieresponsywnym layoutem i problemami z wyświetlaniem (np. białym paskiem na dole strony).</p>
+          <p>Moim <strong>pierwszym</strong> poważniejszym projektem było zadanie z klasy drugiej, które według mojego nauczyciela miało poziom studiów. Polegało na stworzeniu prostej strony w <strong>React JS</strong>, wyświetlającej dane z formularza przesyłane przez zapytania do serwera. Mimo że projekt był funkcjonalny, jego głównym minusem było użycie <strong>przestarzałych metod</strong> stylowania takich jak float: left/right, co skutkowało nieresponsywnym layoutem i problemami z wyświetlaniem (np. białym paskiem na dole strony).</p>
           </div>
           <div id="ItemButton" class="item1">
             <img class="Biblioteka-Start" src="Biblioteka-Start.png">
@@ -119,7 +122,7 @@
           <!-- ITEM 2 -->
           <div class="work__desc2 desc">
             <h3 id="work-header">Poziom nauki: JS ForEach, Funkcje strzałkowe, EventListeners</h3>
-          <p>Drugim "progiem" nauki był dla mnie nieco bardziej zaawansowany JavaScript. Kiedy grałem w jedną z gier komputerowych stwierdziłem, że muszę poćwiczyć QTE (Quick Time Events). Niestety szukając w internecie niczego takiego nie znalazłem. Stwierdziłem więc, że wezmę sprawy w swoje ręce i tak oto powstała ta stronka. <strong>Zawiera ona</strong> funkcje mierzące czas w JS, sprawdzające wciśnięty klawisz z użyciem event.target oraz algorytm losujący string z listy.</p>
+          <p>Drugim "progiem" nauki był dla mnie nieco bardziej zaawansowany <strong>JavaScript</strong>. Kiedy grałem w jedną z gier komputerowych stwierdziłem, że muszę poćwiczyć QTE (Quick Time Events). Niestety szukając w internecie niczego takiego nie znalazłem. Stwierdziłem więc, że wezmę sprawy w swoje ręce i tak oto powstała ta stronka. <strong>Zawiera ona</strong> funkcje mierzące czas w JS, sprawdzające wciśnięty klawisz z użyciem event.key oraz algorytm losujący string z listy.</p>
           </div>
           <div id="ItemButton" class="item2">
             <img class="QTE-Start" src="QTE-Start.png">
@@ -132,7 +135,7 @@
           <!-- ITEM 3 -->
           <div class="work__desc3 desc">
             <h3 id="work-header">Poziom nauki: Zaawansowany CSS</h3>
-          <p>Trzecim z koleji krokiem na drodze do zostania początkującym Web Developerem była nauka CSS w pełni jego możliwości. Podczas gdy klasa uczyła się o tym co to jest grid ja robiłem swoje kółko i krzyżyk. Miałem przy tym chyba najwięcej zabawy jak dotąd. <strong>Nauczyłem się</strong> przy tym naprawde sporo trików dotyczących CSS'a, metod ::before i ::after (Znaczki kółka i krzyżyka są zrobione przeze mnie), jak robić customowe menu opcji i inne podobne. Jest to zdecydowanie projekt z którego jestem najbardziej dumny.</p>
+          <p>Trzecim z koleji krokiem na drodze do zostania początkującym Web Developerem była nauka CSS w pełni jego <strong>możliwości</strong>. Podczas gdy klasa uczyła się o tym co to jest grid ja robiłem swoje kółko i krzyżyk. Miałem przy tym chyba najwięcej zabawy jak dotąd. <strong>Nauczyłem się</strong> przy tym naprawde sporo trików dotyczących CSS'a, metod ::before i ::after (Znaczki kółka i krzyżyka są zrobione przeze mnie), jak robić customowe menu opcji i inne podobne. Jest to zdecydowanie projekt z którego jestem najbardziej <strong>dumny</strong></p>
           </div>
           <div id="ItemButton" class="item3">
             <img src="TTT-StartMenu.png">
@@ -146,7 +149,7 @@
           <!-- ITEM 4 -->
           <div class="work__desc4 desc">
             <h3 id="work-header">Poziom nauki: Zaawansowany JS</h3>
-          <p>Ostatnią większą rzeczą jaką zrobiłem podczas szkoły to gra w ping ponga. Tutaj jednak troche pomógł mi ChatGPT. na tą chwile, obliczanie kontów, pozycji paletek oraz piłki jest dla mnie troche zbyt skomplikowane. Części się już nauczyłem natomiast w momencie pisania tego nie byłbym w stanie zrobić tego sam 1:1. Sam natomiast zrobiłem UI, poziomy trudności, zmianę tła oraz trybu z Player vs Player na Player vs Computer i vice versa. Przy tym projekcie dopiero dowiedziałem się, co to znaczy debuggowanie. Dużo było rzeczy do poprawek po AI i naprawy zajęły mi dużo czasu gdyż nie były to tereny JavaScript'u dobrze mi znane. Natomiast mimo "potu i łez" jakoś dałem radę. Przy tym projekcie <strong>nauczyłem się</strong> przykładać większą uwagę do porządku w kodzie, robienia rzeczy w funkcjiach oraz pisania komentarzy.</p>
+          <p>Ostatnim większym projektem jaki zrobiłem podczas szkoły to gra w ping ponga. Tutaj jednak troche pomógł mi <strong>ChatGPT</strong> na tą chwile, obliczanie kontów, pozycji paletek oraz piłki jest dla mnie troche zbyt skomplikowane. Części się już nauczyłem natomiast w momencie pisania tego nie byłbym w stanie zrobić tego sam 1:1. Sam natomiast <strong>zrobiłem</strong> wygląd oraz połowę logiki. Przy tym projekcie dopiero dowiedziałem się, co to znaczy debuggowanie. Dużo było rzeczy do poprawek po AI i naprawy zajęły mi dużo czasu gdyż nie były to tereny JavaScript'u dobrze mi znane. Natomiast mimo "potu i łez" jakoś dałem radę. Przy tym projekcie dodatkowo <strong>nauczyłem się</strong> przykładać większą uwagę do porządku w kodzie, robienia rzeczy w funkcjiach oraz pisania komentarzy.</p>
           </div>
           <div id="ItemButton" class="item4">
             <img src="PingPong-Game.png">
@@ -169,7 +172,7 @@
               <p id="FirstMonth-Ul" class="future-ul__item li1"><a href="#wordpress">Wordpress</a></p>
             </div>
             <h1 id="Future-Header" class="month__header" id="wordpress">Wordpress</h1>
-            <p class="month__desc">W najbliższym czasie chciałbym poświęcić trochę czasu na naukę Wordpress'a. Co chwilę słyszę, że to bardzo <strong>ułatwia</strong> pracę przy stronach i chciałbym to przetestować. Niektórzy zwrócili mi nawet czasem uwagę, że "czemu pisze strony manualnie". Zawsze odpowiadałem, że nie potrzebuje żadnego Wordpress'a, ale skoro to takie <strong>pomocne i popularne</strong> może warto by spróbować..?</p>
+            <p class="month__desc first">W najbliższym czasie chciałbym poświęcić trochę czasu na naukę Wordpress'a. Co chwilę słyszę, że to bardzo <strong>ułatwia</strong> pracę przy stronach i chciałbym to przetestować. Niektórzy zwrócili mi nawet czasem uwagę, że "czemu pisze strony manualnie". Zawsze odpowiadałem, że nie potrzebuje żadnego Wordpress'a, ale skoro to takie <strong>pomocne i popularne</strong> może warto by spróbować..?</p>
           </div>
           <div id="3month" class="future_3month">
             <h1 id="Future-Header" class="month__header" id="za3mies">Za trzy miesiące</h1>
@@ -181,12 +184,12 @@
             <div class="month__container">
               <div id="nextjs" class="month-container__item">
                 <h1 id="Future-Header" class="month__header">Next JS</h1>
-                <p class="month__desc">Jako młody człowiek, którego pasją jest programowanie, chcę się <strong>rozwijać</strong>. Kilka razy obiły mi się o uszy słowa "Next JS" i chciałbym się tego nauczyć. Ponoć jest to ważna i potrzebna rzecz jeśli chodzi o <strong>Web Development.</strong> Szybko się uczę nowych rzeczy więc powinienem sobie poradzić z przyswojeniem nowego materiału w około miesiąc. </p>
+                <p class="month__desc">Jako młody człowiek, którego pasją jest programowanie, chcę się <strong>rozwijać</strong>. Kilka razy obiły mi się o uszy słowa "Next JS" i chciałbym się tego nauczyć. Ponoć jest to ważna i potrzebna rzecz jeśli chodzi o <strong>Web Development.</strong> Szybko się uczę nowych rzeczy więc powinienem sobie poradzić z przyswojeniem nowego materiału. </p>
               </div>
 
               <div id="typescript" class="month-container__item">
                 <h1 id="Future-Header" class="month__header">Typescript</h1>
-                <p class="month__desc">Kolejną rzeczą do nauki w kierunku zostania dobrym <strong>Web Developerem</strong> byłby TypeScript. Wydaje mi się, że jest on ściśle powiązany z wcześniej wspomnianym Next JS, dlatego dodałem go do listy rzeczy do opanowania w ciągu najbliższych trzech miesięcy. Tak jak Next JS, jest to technologia oparta na <strong>JavaScripcie</strong>, więc nauka będzie dla mnie czystą przyjemnością.</p>
+                <p class="month__desc">Kolejną rzeczą do nauki w kierunku zostania dobrym <strong>Web Developerem</strong> byłby TypeScript. Wydaje mi się, że jest on ściśle powiązany z wcześniej wspomnianym Next JS stąd decyzja o nauce. Tak jak Next JS, jest to technologia oparta na <strong>JavaScripcie</strong>, więc nauka będzie dla mnie czystą przyjemnością.</p>
               </div>
 
               <div id="astro" class="month-container__item">
@@ -205,7 +208,7 @@
             <div class="month__container">
               <div id="drizzle" class="month-container__item">
                 <h1 id="Future-Header drizzle" class="month__header">Drizzle</h1>
-                <p class="month__desc">Drizzle zaciekawiło mnie przez swoją <strong>lekkość i czytelność.</strong> Lubię, gdy praca z bazą danych nie wymaga pisania skomplikowanego kodu. Proste podejście do relacji i wygodne typowanie sprawiają, że korzystanie z Drizzle jest dla mnie <strong>przyjemne i logiczne.</strong></p>
+                <p class="month__desc">Drizzle zaciekawiło mnie przez swoją <strong>lekkość i czytelność.</strong> Lubię, gdy praca z bazą danych nie wymaga pisania skomplikowanego kodu. Proste podejście do relacji i wygodne typowanie sprawiają, że korzystanie z Drizzle wydaje się dla mnie <strong>dobrym wyborem</strong></p>
               </div>
 
               <div id="postgress" class="month-container__item">

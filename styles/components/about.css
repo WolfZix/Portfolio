@@ -12,7 +12,7 @@
     max-width: 75%;
     border: 1px solid #002855;
     background: #090d2825;
-    padding: 1em;
+    padding: 1rem;
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
 }
@@ -86,7 +86,10 @@
     grid-area: exp;
 }
 
-.about-exp__header {
+.about-exp__header,
+.about-description__header,
+.about-me__header {
+    margin-bottom: 1rem;
     font-size: var(--xl-size);
 }
 
@@ -112,10 +115,6 @@
     padding: 1rem;
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
-}
-
-.about-me__header {
-    font-size: var(--xl-size);
 }
 
 .loading {
