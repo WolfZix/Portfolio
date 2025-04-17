@@ -1,9 +1,11 @@
 const showSites = () => {
     const projects = document.querySelectorAll('#ItemButton')
-    const CV = document.querySelector('.OpenCV')
+    const Buttons = document.querySelectorAll('.OpenCV')
 
-    CV.addEventListener('click', () => {
-        window.open('Patryk Domaszek CV.png', '_blank', 'width=538,height=831,resizable=yes')
+    Buttons.forEach( button => {
+        button.addEventListener('click', () => {
+            window.open('Patryk Domaszek CV.png', '_blank', 'width=538,height=831,resizable=no')
+        })
     })
 
     projects.forEach(project => {
