@@ -16,7 +16,9 @@ import '../styles/utils.css';
 import lazyloadingFun from './lazy-loading.js';
 import showSites from './show-sites.js';
 import LightMode from './light-mode.js';
+import MobileMenu from './MobileMenu.js';
 
+MobileMenu()
 LightMode()
 lazyloadingFun()
 showSites()

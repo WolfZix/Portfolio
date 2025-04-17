@@ -9,35 +9,41 @@ const LightMode = () => {
     const Future = document.getElementById('future')
     const AboutFontColor = document.getElementById('about')
     const Contact = document.getElementById('contact')
-    const HeaderLink = document.getElementById('HeaderLink')
+    const HeaderLinks = document.querySelectorAll('#HeaderLink')
+    const MobileLinks = document.querySelectorAll('#MobileLink')
+    const MobileMenu = document.getElementById('MobileMenu')
+    const HeaderBars = document.getElementById('HeaderBars')
 
-    Sun.addEventListener('click', e => {
+    console.log(MobileMenu)
+
+    Sun.addEventListener('click', () => {
         HeroTitle.classList.toggle('DarkModeColor');
         AboutFontColor.classList.toggle('DarkModeColor');
         WorkDesc.classList.toggle('DarkModeColor');
         WorkHeader.classList.toggle('DarkModeColor');
         Future.classList.toggle('DarkModeColor');
         Contact.classList.toggle('DarkModeColor');
-        document.body.classList.toggle('LightModeBg')
+        document.body.classList.toggle('LightModeBg');
+        MobileMenu.classList.toggle('LightModeBg');
         Sun.classList.toggle('DarkModeColor');
         WorkHeaderFirst.classList.toggle('DarkModeColor');
-        HeaderLink.classList.toggle('DarkModeColor');
-        
+        HeaderLinks.forEach(link => { link.classList.toggle('DarkModeColor'); })
         isLight = !isLight;
     })
 
-    MobileSun.addEventListener('click', e => {
+    MobileSun.addEventListener('click', () => {
         HeroTitle.classList.toggle('DarkModeColor');
         AboutFontColor.classList.toggle('DarkModeColor');
         WorkDesc.classList.toggle('DarkModeColor');
         WorkHeader.classList.toggle('DarkModeColor');
         Future.classList.toggle('DarkModeColor');
         Contact.classList.toggle('DarkModeColor');
-        document.body.classList.toggle('LightModeBg')
-        Sun.classList.toggle('DarkModeColor');
+        document.body.classList.toggle('LightModeBg');
+        MobileMenu.classList.toggle('LightModeBg');
+        MobileSun.classList.toggle('DarkModeColor');
         WorkHeaderFirst.classList.toggle('DarkModeColor');
-        HeaderLink.classList.toggle('DarkModeColor');
-        
+        HeaderBars.classList.toggle('DarkModeColor');
+        MobileLinks.forEach(link => { link.classList.toggle('DarkModeColor'); })
         isLight = !isLight;
     })
 }
