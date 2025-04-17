@@ -41,7 +41,7 @@ html {
 body {
     font-family: 'General Sans', sans-serif;
     background-color: var(--dark-clr);
-    color: var(--light-clr);
+    color: var(--gray400-clr);
 }
 
 img, picture, video, canvas, svg {
@@ -58,10 +58,6 @@ button {
     background: none;
     cursor: pointer;
     color: inherit;
-}
-
-a {
-    color: var(--pink-clr);
 }
 
 strong {

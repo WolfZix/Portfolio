@@ -10,10 +10,13 @@ import '../styles/components/work.css';
 import '../styles/components/future.css';
 import '../styles/components/contact.css';
 import '../styles/components/footer.css';
+import '../styles/components/mobileMenu.css';
 import '../styles/utils.css';
 
 import lazyloadingFun from './lazy-loading.js';
 import showSites from './show-sites.js';
+import LightMode from './light-mode.js';
 
+LightMode()
 lazyloadingFun()
 showSites()

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    color: var(--gray400-clr);
 }
 
 .about__description {
@@ -10,8 +11,7 @@
     text-align: center;
     max-width: 75%;
     border: 1px solid #002855;
-    background: var(--palebg-clr);
-    color: var(--gray400-clr);
+    background: #090d2825;
     padding: 1em;
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
@@ -19,7 +19,6 @@
 
 .about__ul {
     font-size: var(--sm-size);
-    color: var(--gray400-clr);
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,14 +32,13 @@
     margin: 1rem auto;
     
     width: 75%;
-    background: var(--palebg-clr);
+    background: #090d2825;
     box-shadow: 0 0 20px #002855;
     border: 1px solid #002855;
     grid-area: zakres;
 }
 
 .about-ul__header {
-    color: var(--gray400-clr);
     font-size: var(--lg-size);
     margin-bottom: 0.5rem;
     grid-area: header;
@@ -81,8 +79,7 @@
     align-self: center;
     text-align: center;
     border: 1px solid #002855;
-    background: var(--palebg-clr);
-    color: var(--gray400-clr);
+    background: #090d2825;
     padding: 1rem;
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
@@ -98,8 +95,7 @@
     text-align: center;
     max-width: 75%;
     border: 1px solid #002855;
-    background: var(--palebg-clr);
-    color: var(--gray400-clr);
+    background: #090d2825;
     padding: 1rem;
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
@@ -112,8 +108,7 @@
     text-align: center;
     max-width: 75%;
     border: 1px solid #002855;
-    background: var(--palebg-clr);
-    color: var(--gray400-clr);
+    background: #090d2825;
     padding: 1rem;
     margin: 1rem auto;
     box-shadow: 0 0 20px #002855;
@@ -131,34 +126,6 @@
 .loaded {
     filter: blur(0px);
     transition: all 300ms ease-in;
-}
-
-.loading::before {
-    content: '';
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    background: #1e1b58;
-}
-
-.loaded::before {
-    content: '';
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    background: none;
-    user-select: none;
-    z-index: -1;
 }
 
 /* xs screen */

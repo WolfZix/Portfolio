@@ -7,6 +7,10 @@
     user-select: none;
 }
 
+.header__link {
+    color: var(--gray400-clr);
+}
+
 .header__menu {
     display: none;
 }
@@ -20,6 +24,7 @@
 
 .header__resume {
     font-weight: 600;
+    color: var(--light-clr);
     letter-spacing: -0.05em;
     background-color: var(--pink-clr);
     padding: .75rem 1.5rem;
@@ -48,7 +53,6 @@
         font-size: var(--xs-size);
         text-decoration: none;
         font-weight: 600;
-        color: var(--gray600-clr);
         letter-spacing: -0.05em;
         transition: color 0.3s;
     }
@@ -64,9 +68,8 @@
     
     .header__sun {
         display: block;
-        color: var(--gray600-clr);
-        width: var(--base-size);
-        height: var(--base-size);
+        width: var(--xl-size);
+        height: var(--xl-size);
     }
     
     .header__resume {
@@ -85,8 +88,8 @@
     }
     
     .header__sun {
-        width: var(--xl-size);
-        height: var(--xl-size);
+        width: var(--xl2-size);
+        height: var(--xl2-size);
     }
     
     .header__resume {

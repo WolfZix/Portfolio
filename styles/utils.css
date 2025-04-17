@@ -51,6 +51,9 @@
     box-shadow: 0 0 10px #151d59d3;
 }
 
+.DarkModeColor { color: var(--dark-clr); text-shadow: none; }
+.LightModeBg { background: var(--light-clr); }
+
 /* xs screen */
 @media (min-width: 475px) { .container { max-width: 475px; }}
 
