@@ -4,7 +4,7 @@ const showSites = () => {
 
     Buttons.forEach( button => {
         button.addEventListener('click', () => {
-            window.open('Patryk Domaszek CV.png', '_blank', 'width=700,height=870,resizable=no')
+            window.open('Patryk Domaszek CV.pdf', '_blank')
         })
     })
 
