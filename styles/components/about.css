@@ -23,10 +23,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    'header header header'
-    'html js css'
-    'python react angular'
-    'sql sql c';
+    'header1 header1 header2'
+    'html js python'
+    'react angular sql';
     gap: 1rem;
     padding: 1em;
     margin: 1rem auto;
@@ -38,10 +37,16 @@
     grid-area: zakres;
 }
 
-.about-ul__header {
+.about-ul__header1 {
     font-size: var(--lg-size);
     margin-bottom: 0.5rem;
-    grid-area: header;
+    grid-area: header1;
+}
+
+.about-ul__header2 {
+    font-size: var(--lg-size);
+    margin-bottom: 0.5rem;
+    grid-area: header2;
 }
 
 .about-li__html {
@@ -60,18 +65,10 @@
     grid-area: python;
 }
 
-.about-li__c {
-    text-align: left;
-    grid-area: c;
-}
-
 .about-li__sql {
     grid-area: sql;
 }
 
-.about-li__angular {
-    grid-area: angular;
-}
 
 .about-exp__container {
     width: 75%;
