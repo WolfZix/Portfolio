@@ -62,11 +62,11 @@
     </header>
     <main>
       <section class="hero container">
-        <img class="hero__img" src="Profil.jpg" alt="Profile Picture">
+        <img id="hero-pic" class="hero__img" src="Profil.jpg" alt="Profile Picture">
         <h2 class="hero__subtitle">Patryk Domaszek</h2>
           <h2 class="hero__country">Poland</h2>
         <h1 id="Hero-Title" class="hero__title">Self-Taught<br>Web Developer</h1>
-        <p class="hero__description">Moja pasja to <strong>Web Development</strong>, którą chcę rozwijać. Szukam pierwszych wyzwań zawodowych by doskonalić umiejętności <strong>Front-End Developera</strong>. Oto strona, która przedstawi moją przygodę z programowaniem.<br><strong>Enjoy!</strong>
+        <p class="hero__description">Tworzę <strong>nowoczesne, szybkie i responsywne</strong> strony internetowe dbając o dobrą jakość kodu i doświadczenie użytkownika. Moją specjalizacją jest <strong>FrontEnd</strong>, a w przyszłości także <strong>BackEnd.</strong>
         </p>
         <a class="hero__btn btn" href="#contact">Reach Out</a>
       </section>
@@ -74,31 +74,28 @@
       <div id="line" class="line"></div>
 
       <section id="about" class="about container section">
+        <h1 id="aboutheaderfirst" class="about__header">Więcej o mnie</h1>
         <div id="about-container" class="about__description loading">
-          <h3 class="about-description__header">O mnie</h3>
-          <p>Jestem frontend developerem specjalizującym się w tworzeniu nowoczesnych i <strong>responsywnych</strong> stron internetowych. Skupiam się na czystym kodzie, dobrym UX oraz wydajności aplikacji.Obecnie rozwijam się również w kierunku <strong>backendu</strong>, aby lepiej rozumieć pełen proces tworzenia aplikacji.</p>
+          <h3 class="about-description__header">Kim jestem?</h3>
+          <p>Jestem frontend developerem specjalizującym się w tworzeniu nowoczesnych i <strong>responsywnych</strong> stron internetowych. Skupiam się na czystym kodzie, dobrym UX oraz wydajności aplikacji. Obecnie rozwijam się również w kierunku <strong>backendu</strong>, aby lepiej rozumieć pełen proces tworzenia aplikacji.</p>
         </div>
           <div id="about-container" class="about__ul loading">
-            <h3 class="about-ul__header1">Opanowane umiejętności Frontend</h3>
+            <h3 class="about-ul__header1">Opanowany<br>Frontend</h3>
             <p class="about-li__html">HTML</p>
             <p class="about-li__css">CSS</p>
-            <p class="about-li__javascript">JavaScript</p>
+            <p class="about-li__javascript">JS</p>
             <p class="about-li__react">ReactJS</p>
-            <h3 class="about-ul__header2">Podstawy Backendu</h3>
+            <h3 class="about-ul__header2">Podstawy<br>Backendu</h3>
             <p class="about-li__python">Python</p>
             <p class="about-li__sql">SQL</p>
         </div>
         <div id="about-container" class="about-exp__container loading">
           <h3 class="about-exp__header">Doświadczenie</h3>
-          <p class="about__expirience">Uczyłem się od zawodowych <strong>Front-End Developerów,</strong> choć nie miałem okazji pracować w profesjonalnym środowisku. Sworzyłem wiele stron dla zabawy lub nauki. Mimo ograniczonego doświadczenia, wierzę, że moje <strong>umiejętności</strong> to rekompensują.</p>
+          <p class="about__expirience">Rozwijam swoje umiejętności, tworząc <strong>własne</strong> projekty i analizując rozwiązania stosowane przez <strong>doświadczonych</strong> Front-End Developerów. Zrealizowałem wiele projektów, które dały mi solidne podstawy i praktyczne <strong>doświadczenie</strong> w pracy z kodem.</p>
         </div>
         <div id="about-container" class="about-school__container loading">
           <h3 class="about-school__header">Szkoła</h3>
-          <p class="about__school">Chodziłem do technikum ZSCHIE w Gdyni na kierunek <strong>programistyczny.</strong> Większość wiedzy zdobyłem sam. Ukończyłem szkołę z maturą wraz z Certyfikatami kwalifikacji zawodowej <strong>INF.04</strong> i <strong>INF.03</strong>. Obecnie czekam na dyplom zawodowy.</p>
-        </div>
-        <div id="about-container" class="about__me loading">
-          <h3 class="about-me__header">Więcej o mnie..</h1>
-          <p class="about-me__description">Nazywam się Patryk Domaszek i mam 19 lat. <strong>Sam</strong> zacząłem się uczyć <strong>programowania</strong> odkąd spodobało mi się to na początku szkoły średniej. Mogę z pewnością stwierdzić, iż jest to moja <strong>pasja.</strong> W ciągu tych pięciu lat nauczyłem się korzystać z narzędzi takich jak: <strong>VSCode, Visual Studio, Viete, GitHub</strong> oraz inne strony pomocnicze.<br><br></rb><b>Używanie ChatGpt:</b><br> ChatGpt to ogromna pomoc w <strong>programowaniu,</strong> nie da się ukryć, natomiast osobiście uważam, że nie powinien on <strong>zastępować</strong> naszej wiedzy tylko ją <strong>poszerzać</strong>. Korzystając z ChataGpt staram się pytać go w ostateczności jak naprawić błędy, potem pytam czemu akurat tak a nie inaczej i na koniec pytam o inne metody rozwiązań. W ten sposób <strong>uczę się na błędach</strong> i mam <strong>Fun</strong> z nauki.</p>
+          <p class="about__school">Ukończyłem technikum o profilu programistycznym <strong>(ZSCHIE w Gdyni)</strong>, zdobywając kwalifikacje zawodowe <strong>INF.03</strong> oraz <strong>INF.04</strong> i dyplom zawodowy. Obecnie studiuję informatykę ze specjalizacją <strong>frontend</strong>. Większość umiejętności rozwijałem samodzielnie poprzez <strong>własne</strong> projekty.</p>
         </div>
       </section>
       <div id="line" class="line"></div>
@@ -107,133 +104,53 @@
           <h1 id="workheaderfirst" class="work__header_first">Moje Projekty</h1>
           <!-- ITEM 1 -->
           <div class="work__desc1 desc">
-            <h3 id="work-header">Poziom nauki: Grid/Flex layout</h3>
-          <p>Moim <strong>pierwszym</strong> poważniejszym projektem było zadanie z klasy drugiej, które według mojego nauczyciela miało poziom studiów. Polegało na stworzeniu prostej strony w <strong>React JS</strong>, wyświetlającej dane z formularza przesyłane przez zapytania do serwera. Mimo że projekt był funkcjonalny, jego głównym minusem było użycie <strong>przestarzałych metod</strong> stylowania takich jak float: left/right, co skutkowało nieresponsywnym layoutem i problemami z wyświetlaniem (np. białym paskiem na dole strony).</p>
-          </div>
-          <div id="ItemButton" class="item1">
-            <img class="Biblioteka-Start" src="Biblioteka-Start.png">
-            <img class="Biblioteka-Dane" src="Biblioteka-Dane.png">
-            <img class="Biblioteka-Result" src="Biblioteka-Result.png">
-          </div>
-            
-          <div id="line" class="line1"></div>
-
-          <!-- ITEM 2 -->
-          <div class="work__desc2 desc">
             <h3 id="work-header">Poziom nauki: JS ForEach, Funkcje strzałkowe, EventListeners</h3>
           <p>Drugim "progiem" nauki był dla mnie nieco bardziej zaawansowany <strong>JavaScript</strong>. Kiedy grałem w jedną z gier komputerowych stwierdziłem, że muszę poćwiczyć QTE (Quick Time Events). Niestety szukając w internecie niczego takiego nie znalazłem. Stwierdziłem więc, że wezmę sprawy w swoje ręce i tak oto powstała ta stronka. <strong>Zawiera ona</strong> funkcje mierzące czas w JS, sprawdzające wciśnięty klawisz z użyciem event.key oraz algorytm losujący string z listy.</p>
           </div>
-          <div id="ItemButton" class="item2">
+          <div id="ItemButton" class="item1">
             <img class="QTE-Start" src="QTE-Start.png">
             <img class="QTE-Game" src="QTE-Game.png">
             <img class="QTE-Lose" src="QTE-Lose-HM.png">
           </div>
 
-          <div id="line" class="line2"></div>
+          <div id="line" class="line1"></div>
 
-          <!-- ITEM 3 -->
-          <div class="work__desc3 desc">
+          <!-- ITEM 2 -->
+          <div class="work__desc2 desc">
             <h3 id="work-header">Poziom nauki: Zaawansowany CSS</h3>
           <p>Trzecim z koleji krokiem na drodze do zostania początkującym Web Developerem była nauka CSS w pełni jego <strong>możliwości</strong>. Podczas gdy klasa uczyła się o tym co to jest grid ja robiłem swoje kółko i krzyżyk. Miałem przy tym chyba najwięcej zabawy jak dotąd. <strong>Nauczyłem się</strong> przy tym naprawde sporo trików dotyczących CSS'a, metod ::before i ::after (Znaczki kółka i krzyżyka są zrobione przeze mnie), jak robić customowe menu opcji i inne podobne. Jest to zdecydowanie projekt z którego jestem najbardziej <strong>dumny</strong></p>
           </div>
-          <div id="ItemButton" class="item3">
+          <div id="ItemButton" class="item2">
             <img src="TTT-StartMenu.png">
             <img src="TTT-Settings.png">
             <img src="TTT-Game.png">
             <img src="TTT-Win.png">
           </div>
 
-          <div id="line" class="line3"></div>
+          <div id="line" class="line2"></div>
 
-          <!-- ITEM 4 -->
-          <div class="work__desc4 desc">
+          <!-- ITEM 3 -->
+          <div class="work__desc3 desc">
             <h3 id="work-header">Poziom nauki: Zaawansowany JS</h3>
           <p>Ostatnim większym projektem jaki zrobiłem podczas szkoły to gra w ping ponga. Tutaj jednak troche pomógł mi <strong>ChatGPT</strong> na tą chwile, obliczanie kątów, pozycji paletek oraz piłki jest dla mnie troche zbyt skomplikowane. Części się już nauczyłem natomiast w momencie pisania tego nie byłbym w stanie zrobić tego sam 1:1. Sam natomiast <strong>zrobiłem</strong> wygląd oraz połowę logiki. Przy tym projekcie dopiero dowiedziałem się, co to znaczy debuggowanie. Dużo było rzeczy do poprawek po AI i naprawy zajęły mi dużo czasu gdyż nie były to tereny JavaScript'u dobrze mi znane. Natomiast mimo "potu i łez" jakoś dałem radę. Przy tym projekcie dodatkowo <strong>nauczyłem się</strong> przykładać większą uwagę do porządku w kodzie, robienia rzeczy w funkcjiach oraz pisania komentarzy.</p>
           </div>
-          <div id="ItemButton" class="item4">
+          <div id="ItemButton" class="item3">
             <img src="PingPong-Game.png">
             <img src="PingPong-Settings.png">
           </div>
         
-      <div id="line" class="line4"></div>
+      <div id="line" class="line3"></div>
 
-      <!-- ITEM 5 -->
-          <div class="work__desc5 desc">
+      <!-- ITEM 4 -->
+          <div class="work__desc4 desc">
             <h3 id="work-header">Poziom nauki: Początki Flaska</h3>
           <p>
           Ostatnio zacząłem się zastanawiać, czy da się połączyć naukę <strong>Pythona</strong> z tworzeniem stron internetowych. Ku mojemu zaskoczeniu okazało się, że jest to <strong>prostsze</strong>, niż myślałem. Projekt po lewej stronie przedstawia galerię zdjęć, która wykorzystuje pracę z lokalnym folderem <strong>Uploads</strong>, z którego dodaje lub usuwa zdjęcia. Zdjęcia są <strong>posegregowane</strong> według daty dodania, a usuwanie odbywa się od najnowszego zdjęcia. Niestety, był to krótki <strong>projekt</strong>, ponieważ łatwiej mi się uczyć poprzez wiele małych projektów niż pracując długo nad jednym, ale dużym.
           </p>
           </div>
-          <div id="ItemButton" class="item5">
+          <div id="ItemButton" class="item4">
             <img src="flask2png.png">
             <img src="flask1.png">
-            </div>
-          </div>
-        </div>
-      </section>
-      <div id="line" class="line"></div>
-      <section>
-        <div class="future" id="future">
-          <h1 id="Future-Header" class="future__header">Przyszłe plany rozwoju</h1>
-          <div id="Future-Ul" class="future__ul">
-            <p class="future-ul__item li1"><a href="#1month">Najbliższy miesiac</a></p>
-            <p class="future-ul__item li3"><a href="#3month">Najbliższe trzy miesiace</a></p>
-            <p class="future-ul__item li2"><a href="#6month">Najbliższe sześć miesięcy</a></p>
-          </div>
-          <div id="1month" class="future_1month">
-            <h1 id="Future-Header" class="month__header">Za miesiąc</h1>
-            <div class="future__ul future-1month__ul">
-              <p id="FirstMonth-Ul" class="future-ul__item li1"><a href="#wordpress">Wordpress</a></p>
-            </div>
-            <h1 id="Future-Header" class="month__header" id="wordpress">Wordpress</h1>
-            <p class="month__desc first">W najbliższym czasie chciałbym poświęcić trochę czasu na naukę Wordpress'a. Co chwilę słyszę, że to bardzo <strong>ułatwia</strong> pracę przy stronach i chciałbym to przetestować. Niektórzy zwrócili mi nawet czasem uwagę, że "czemu pisze strony manualnie". Zawsze odpowiadałem, że nie potrzebuje żadnego Wordpress'a, ale skoro to takie <strong>pomocne i popularne</strong> może warto by spróbować..?</p>
-          </div>
-          <div id="3month" class="future_3month">
-            <h1 id="Future-Header" class="month__header" id="za3mies">Za trzy miesiące</h1>
-            <div id="ThreeMonths-Ul" class="future__ul future-3month__ul">
-              <p class="future-ul__item li1"><a href="#nextjs">Next JS</a></p>
-              <p class="future-ul__item li3"><a href="#typescript">TypeScript</a></p>
-              <p class="future-ul__item li2"><a href="#astro">Astro</a></p>
-            </div>
-            <div class="month__container">
-              <div id="nextjs" class="month-container__item">
-                <h1 id="Future-Header" class="month__header">Next JS</h1>
-                <p class="month__desc">Jako młody człowiek, którego pasją jest programowanie, chcę się <strong>rozwijać</strong>. Kilka razy obiły mi się o uszy słowa "Next JS" i chciałbym się tego nauczyć. Ponoć jest to ważna i potrzebna rzecz jeśli chodzi o <strong>Web Development.</strong> Szybko się uczę nowych rzeczy więc powinienem sobie poradzić z przyswojeniem nowego materiału. </p>
-              </div>
-
-              <div id="typescript" class="month-container__item">
-                <h1 id="Future-Header" class="month__header">Typescript</h1>
-                <p class="month__desc">Kolejną rzeczą do nauki w kierunku zostania dobrym <strong>Web Developerem</strong> byłby TypeScript. Wydaje mi się, że jest on ściśle powiązany z wcześniej wspomnianym Next JS stąd decyzja o nauce. Tak jak Next JS, jest to technologia oparta na <strong>JavaScripcie</strong>, więc nauka będzie dla mnie czystą przyjemnością.</p>
-              </div>
-
-              <div id="astro" class="month-container__item">
-                <h1 id="Future-Header" class="month__header">Astro</h1>
-                <p class="month__desc">Ostatnią rzeczą na te trzy miesiące, którą chcę opanować, jest Astro. Nowoczesny <strong>framework</strong> do budowania stron internetowych. Jego podejście do <strong>wydajności</strong> i dzielenie kodu na mniejsze części mnie zaciekawiło. W najbliższych miesiącach planuję nauczyć się podstaw i stworzyć <strong>własny projekt</strong> z jego wykorzystaniem.</p>
-              </div>
-            </div>
-          </div>
-          <div id="6month" class="future_6month">
-            <h1 id="Future-Header" class="month__header">Za sześć miesięcy</h1>
-            <div id="SixMonths-Ul" class="future__ul future-3month__ul">
-              <p class="future-ul__item li1"><a href="#drizzle">Drizzle</a></p>
-              <p class="future-ul__item li3"><a href="#postgress">Postgress</a></p>
-              <p class="future-ul__item li2"><a href="#python">Kurs Python</a></p>
-            </div>
-            <div class="month__container">
-              <div id="drizzle" class="month-container__item">
-                <h1 id="Future-Header drizzle" class="month__header">Drizzle</h1>
-                <p class="month__desc">Drizzle zaciekawiło mnie przez swoją <strong>lekkość i czytelność.</strong> Lubię, gdy praca z bazą danych nie wymaga pisania skomplikowanego kodu. Proste podejście do relacji i wygodne typowanie sprawiają, że korzystanie z Drizzle wydaje się dla mnie <strong>dobrym wyborem</strong></p>
-              </div>
-
-              <div id="postgress" class="month-container__item">
-                <h1 id="Future-Header postgress" class="month__header">Postgress</h1>
-                <p id="about-desc" class="month__desc">Mam już podstawową wiedzę na temat PostgreSQL, którą zdobyłem <strong>w szkole</strong>. Potrafię wykonywać podstawowe operacje, takie jak tworzenie tabel i zapytania SELECT oraz DELETE. Chciałbym teraz zgłębić bardziej <strong>zaawansowane</strong> funkcje tej bazy danych.</p>
-              </div>
-
-              <div id="python" class="month-container__item">
-                <h1 id="Future-Header" class="month__header">Kurs Python</h1>
-                <p class="month__desc">Mam już <strong>dobrą</strong> znajomość Pythona, którą też mam ze szkoły i z pisania własnych projektów. <strong>Potrafię</strong> pisać skrypty, korzystać z popularnych bibliotek i rozwiązywać problemy algorytmiczne. Chciałbym teraz pogłębić swoją wiedzę o <strong>frameworkach</strong> takich jak Django czy Flask.</p>
-              </div>
             </div>
           </div>
         </div>
@@ -254,7 +171,7 @@
           </div>
           <div id="options" class="email">
             <div class="Gmail__Icon">
-              <a href="mailto:patryk.domaszek41@gmail.com" title="Napisz do mnie maila" target="_blank,">
+              <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=patryk.domaszek41@gmail.com&su=Wspolpraca%20Frontend&body=Dzień%20dobry," target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
                   <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
                   <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>

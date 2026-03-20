@@ -23,33 +23,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    'Biblioteka-start Biblioteka-dane'
-    'Biblioteka-res Biblioteka-res';
-    gap: 1rem;
-    grid-area: img1;
-}
-
-.Biblioteka-Start { grid-area: Biblioteka-start; }
-.Biblioteka-Dane { grid-area: Biblioteka-dane; }
-.Biblioteka-Result { grid-area: Biblioteka-res; }
-
-.item2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
     'QTE-Start QTE-Lose'
     'QTE-Game QTE-Game';
     gap: 1rem;
-    grid-area: img2;
+    grid-area: img1;
 }
 
 .QTE-Start { grid-area: QTE-Start; }
 .QTE-Game { grid-area: QTE-Game; }
 .QTE-Lose { grid-area: QTE-Lose; }
 
-.item3 {
+.item2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-area: img2;
+}
+
+
+.item3 {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
     grid-area: img3;
 }
@@ -59,13 +53,6 @@
     flex-direction: column;
     gap: 1rem;
     grid-area: img4;
-}
-
-.item5 {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    grid-area: img5;
     padding: 0 2rem;
 }
 
@@ -76,8 +63,7 @@
 
 .line1,
 .line2,
-.line3,
-.line4 {
+.line3 {
     margin: 0 auto;
     width: 100%;
     height: 1px;
@@ -86,15 +72,14 @@
 }
 
 #work-header {
-    font-size: var(--xl4-size);
+    font-size: var(--xl2-size);
     margin-bottom: 1rem;
 }
 
 .work__desc1,
 .work__desc2,
 .work__desc3,
-.work__desc4,
-.work__desc5 {
+.work__desc4 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -105,8 +90,7 @@
 .work__desc1 p,
 .work__desc2 p,
 .work__desc3 p,
-.work__desc4 p,
-.work__desc5 p {
+.work__desc4 p {
     color: var(--gray600-clr);
 }
 
@@ -114,19 +98,17 @@
 .work__desc2 { grid-area: desc2; }
 .work__desc3 { grid-area: desc3; }
 .work__desc4 { grid-area: desc4; }
-.work__desc5 { grid-area: desc5; }
 
 .line1 { grid-area: line1; }
 .line2 { grid-area: line2; }
 .line3 { grid-area: line3; }
-.line4 { grid-area: line4; }
 
 /* md screen */
 @media (min-width: 768px) {
     .work { max-width: 768px; gap: 2rem; }
 
     h3 { margin-bottom: 0.75rem; }
-    .item1, .item2, .item3, .item4, .item5 { padding: 0 1.5rem; }
+    .item1, .item2, .item3, .item4 { padding: 0 1.5rem; }
     .desc { max-width: 70ch; }
 
     .work__desc1 > h3 { font-size: var(--xl-size); }
@@ -140,9 +122,6 @@
 
     .work__desc4 > h3 { font-size: var(--xl-size); }
     .work__desc4 { font-size: var(--base-size); }
-
-    .work__desc5 > h3 { font-size: var(--xl-size); }
-    .work__desc5 { font-size: var(--base-size); }
 }
 
 /* lg screen */
@@ -152,8 +131,7 @@
     .item1,
     .item2,
     .item3,
-    .item4,
-    .item5 {
+    .item4 {
         opacity: 0.5;
         filter: blur(5px);
         transform: scale(0.95);
@@ -163,8 +141,7 @@
     .item1:hover,
     .item2:hover,
     .item3:hover,
-    .item4:hover,
-    .item5:hover {
+    .item4:hover {
         opacity: 1;
         transform: scale(1);
         filter: blur(0);
@@ -174,16 +151,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        'header header' 
-        'img1 desc1'
+        'header header'
+        'desc1 img1'
         'line1 line1'
-        'desc2 img2'
+        'img2 desc2'
         'line2 line2'
-        'img3 desc3'
+        'desc3 img3'
         'line3 line3'
-        'desc4 img4'
-        'line4 line4'
-        'img5 desc5';
+        'img4 desc4';
     }
 
     .work__header { margin-bottom: 3rem; font-size: var(--xl4-size);}
@@ -191,10 +166,10 @@
 
     .desc { align-items: center; margin: auto 0;}
 
-    .item1, .item2, .item3, .item4, .item5 { padding: 0 1rem; }
-    .work__desc1, .work__desc2, .work__desc3, .work__desc4, .work__desc5 { width: 100%; }
+    .item1, .item2, .item3, .item4 { padding: 0 1rem; }
+    .work__desc1, .work__desc2, .work__desc3, .work__desc4 { width: 100%; }
 
-    .line1, .line2, .line3, .line4 { margin-top: 2rem; margin-bottom: 2rem;}
+    .line1, .line2, .line3 { margin-top: 2rem; margin-bottom: 2rem;}
 
     .work__desc1 > h3 { font-size: var(--xl2-size); }
     .work__desc1 { font-size: var(--lg-size); }
@@ -207,32 +182,16 @@
 
     .work__desc4 > h3 { font-size: var(--xl2-size); }
     .work__desc4 { font-size: var(--lg-size); }
-
-    .work__desc5 > h3 { font-size: var(--xl2-size); }
-    .work__desc5 { font-size: var(--lg-size); }
 }
 
 /* xl screen */
 @media (min-width: 1280px) {
     .work {
         max-width: 1280px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        'header header'
-        'img1 desc1'
-        'line1 line1'
-        'desc2 img2'
-        'line2 line2'
-        'img3 desc3'
-        'line3 line3'
-        'desc4 img4'
-        'line4 line4'
-        'img5 desc5';
     }
 
     h3 { margin-bottom: 1.5rem; }
-    .item1, .item2, .item3, .item4, .item5 { padding: 0; }
+    .item1, .item2, .item3, .item4 { padding: 0; }
     .work__header, .work__header_first { font-size: var(--xl5-size); }
 
     .work__desc1 > h3 { font-size: var(--xl3-size); }
@@ -246,41 +205,35 @@
 
     .work__desc4 > h3 { font-size: var(--xl3-size); }
     .work__desc4 { font-size: var(--xl-size); }
-
-    .work__desc5 > h3 { font-size: var(--xl3-size); }
-    .work__desc5 { font-size: var(--xl-size); }
 }
 
 /* 1920x1080 screen */
 @media (min-width: 1420px) {
     /* 1920x1080 == 1620px ??????? HOW ?!*/
+    .work__header_first {
+        margin-top: 3rem;
+    }
+
+    #work-header {
+        font-size: var(--xl4-size);
+    }
+
     .work {
         max-width: 1420px;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-areas: 
         'header header'
-        'img1 desc1'
+        'desc1 img1'
         'line1 line1'
-        'desc2 img2'
+        'img2 desc2'
         'line2 line2'
-        'img3 desc3'
+        'desc3 img3'
         'line3 line3'
-        'desc4 img4'
-        'line4 line4'
-        'img5 desc5';
+        'img4 desc4';
     }
     
     .item1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        'Biblioteka-start Biblioteka-dane'
-        'Biblioteka-res Biblioteka-res';
-        gap: 2rem 1rem;
-    }
-
-    .item2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -289,14 +242,14 @@
         gap: 1rem;
     }
 
-    .item3 {
+    .item2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
     
-    .item4,
-    .item5 {
+    .item3,
+    .item4 {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -317,7 +270,4 @@
 
     .work__desc4 > h3 { font-size: var(--xl4-size); }
     .work__desc4 { font-size: var(--xl2-size); }
-
-    .work__desc5 > h3 { font-size: var(--xl4-size); }
-    .work__desc5 { font-size: var(--xl2-size); }
 }

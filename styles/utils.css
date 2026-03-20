@@ -53,6 +53,7 @@
 
 .DarkModeColor { color: var(--dark-clr); text-shadow: none; }
 .LightModeBg { background: var(--light-clr); }
+.LightModePic { border-color: var(--dark-clr); box-shadow: 0 0 10px var(--dark-clr); }
 
 /* xs screen */
 @media (min-width: 475px) { .container { max-width: 475px; }}
