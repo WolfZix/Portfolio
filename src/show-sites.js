@@ -4,7 +4,7 @@ const showSites = () => {
 
     Buttons.forEach( button => {
         button.addEventListener('click', () => {
-            window.open('Patryk Domaszek CV.pdf', '_blank')
+            window.open('Patryk_Domaszek_CV.pdf', '_blank')
         })
     })
 
