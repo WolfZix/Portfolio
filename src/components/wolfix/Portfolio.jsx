@@ -7,19 +7,19 @@ const projects = [
     name: 'Elegance',
     category: 'Salon fryzjerski',
     url: 'https://velvet-style-studio.base44.app/',
-    image: '/Elegance.png',
+    image: `${import.meta.env.BASE_URL}Elegance.png`,
   },
   {
     name: 'Kwiaciarnia Magnolia',
     category: 'Kwiaciarnia',
     url: 'https://kwiaciarnia-magnolia.base44.app/',
-    image: '/Kwiaciarnia Magnolia.png',
+    image: `${import.meta.env.BASE_URL}Kwiaciarnia Magnolia.png`,
   },
   {
     name: 'SolidHaus',
     category: 'Budownictwo',
     url: 'https://solidhaus.base44.app/',
-    image: '/SolidHaus.png',
+    image: `${import.meta.env.BASE_URL}SolidHaus.png`,
   },
 ];
 

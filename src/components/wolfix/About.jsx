@@ -50,7 +50,7 @@ export default function About() {
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary" />
             <div className="aspect-[4/3] bg-transparent">
               <TiltedCard
-                imageSrc="./Laptop1.png"
+                imageSrc={`${import.meta.env.BASE_URL}Laptop1.png`}
                 altText="Kendrick Lamar - GNX Album Cover"
                 captionText="Kendrick Lamar - GNX"
                 containerHeight="100%"
