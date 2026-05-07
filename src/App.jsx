@@ -8,10 +8,13 @@ import Home from './pages/Home';
 import ScrollToTopButton from "./components/wolfix/ScrollToTopButton";
 
 function App() {
+  const rawBasename = import.meta.env.VITE_ROUTER_BASENAME ?? import.meta.env.BASE_URL;
+  const basename = rawBasename && rawBasename !== './' ? rawBasename : '/';
+
   return (
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
-        <Router basename="/Portfolio">
+        <Router basename={basename}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="*" element={<PageNotFound />} />
