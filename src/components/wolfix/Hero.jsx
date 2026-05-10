@@ -5,7 +5,7 @@ import PixelBlast from '../../PixelBlast';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <div className="w-full h-full absolute">
           <PixelBlast
