@@ -1,3 +1,10 @@
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
 
 export default function Footer() {
   return (
@@ -15,7 +22,7 @@ export default function Footer() {
             <div className="grid grid-cols-3 text-center">
               <h6 className="text-sm font-black uppercase tracking-widest text-muted-foreground mb-4 col-span-3"> Nawigacja </h6>
               <ul className="space-y-2 text-sm text-muted-foreground cursor-pointer">
-                <li><a href="#hero" className="hover:text-foreground transition">Strona Główna</a></li>
+                <li><button className="hover:text-foreground transition" onClick={() => { scrollToTop() }}>Strona Główna</button></li>
                 <li><a href="#about" className="hover:text-foreground transition">O nas</a></li>
               </ul>
               <ul className="space-y-2 text-sm text-muted-foreground cursor-pointer">
