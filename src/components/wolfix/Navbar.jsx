@@ -6,6 +6,7 @@ const navLinks = [
   { label: 'O nas', href: '#about' },
   { label: 'Usługi', href: '#services' },
   { label: 'Proces', href: '#process' },
+  { label: 'Cennik', href: '#pricing' },
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Kontakt', href: '#contact' },
 ];
@@ -20,6 +21,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <div className="fixed top-0 left-0 right-0 h-[2px] bg-primary z-[60]" />
@@ -32,9 +40,7 @@ export default function Navbar() {
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between h-16 md:h-20">
-          <a href="#hero" className="flex items-center h-12 md:h-14">
-            <img src={`${import.meta.env.BASE_URL}Wolfix Logo2.png`} alt="Wolfix" className=" md:h-14 h-10 object-contain" />
-          </a>
+          <img src={`${import.meta.env.BASE_URL}Wolfix Logo2.png`} alt="Wolfix" className=" md:h-14 h-10 object-contain cursor-pointer" onClick={() => { scrollToTop() }} />
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
