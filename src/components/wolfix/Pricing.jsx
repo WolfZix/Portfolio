@@ -3,6 +3,16 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import ElectricBorder from '../../ElectricBorder';
 
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}
+
 const models = [
   {
     label: 'Projekt jednorazowy',
@@ -107,15 +117,15 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <a
-                  href="#contact"
+                <button
+                  onClick={() => { scrollToSection("contact") }}
                   className={`inline-block mt-10 px-8 py-4 text-sm font-bold uppercase tracking-wider transition-all duration-300 text-center w-full focus:outline-none focus:ring-2 focus:ring-primary ${model.featured
                     ? 'bg-primary text-primary-foreground hover:bg-primary/90'
                     : 'border border-border text-foreground hover:border-foreground'
                     }`}
                 >
                   Zaczynamy
-                </a>
+                </button>
               </motion.div>
             );
 

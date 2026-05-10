@@ -3,9 +3,19 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import PixelBlast from '../../PixelBlast';
 
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <div className="w-full h-full absolute">
           <PixelBlast
@@ -72,19 +82,19 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a
-              href="#contact"
+            <button
+              onClick={() => { scrollToSection('contact') }}
               className="group inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 md:px-10 py-4 md:py-5 text-sm md:text-base font-bold uppercase tracking-wider hover:bg-primary/90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
             >
               Bezpłatna konsultacja
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="#services"
+            </button>
+            <button
+              onClick={() => { scrollToSection('services') }}
               className="inline-flex items-center justify-center gap-3 border border-border text-foreground px-8 md:px-10 py-4 md:py-5 text-sm md:text-base font-medium uppercase tracking-wider hover:border-foreground transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary"
             >
               Nasze Usługi
-            </a>
+            </button>
           </motion.div>
         </div>
       </div>

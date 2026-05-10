@@ -1,10 +1,12 @@
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-};
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (!element) return;
 
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}
 
 export default function Footer() {
   return (
@@ -22,16 +24,16 @@ export default function Footer() {
             <div className="grid grid-cols-3 text-center">
               <h6 className="text-sm font-black uppercase tracking-widest text-muted-foreground mb-4 col-span-3"> Nawigacja </h6>
               <ul className="space-y-2 text-sm text-muted-foreground cursor-pointer">
-                <li><button className="hover:text-foreground transition" onClick={() => { scrollToTop() }}>Strona Główna</button></li>
-                <li><a href="#about" className="hover:text-foreground transition">O nas</a></li>
+                <li><button className="hover:text-foreground transition" onClick={() => { scrollToSection("hero") }}>Strona Główna</button></li>
+                <li><button onClick={() => { scrollToSection("about") }} className="hover:text-foreground transition">O nas</button></li>
               </ul>
               <ul className="space-y-2 text-sm text-muted-foreground cursor-pointer">
-                <li><a href="#services" className="hover:text-foreground transition">Usługi</a></li>
-                <li><a href="#process" className="hover:text-foreground transition">Proces</a></li>
+                <li><button onClick={() => { scrollToSection("services") }} className="hover:text-foreground transition">Usługi</button></li>
+                <li><button onClick={() => { scrollToSection("process") }} className="hover:text-foreground transition">Proces</button></li>
               </ul>
               <ul className="space-y-2 text-sm text-muted-foreground cursor-pointer">
-                <li><a href="#portfolio" className="hover:text-foreground transition">Portfolio</a></li>
-                <li><a href="#contact" className="hover:text-foreground transition">Kontakt</a></li>
+                <li><button onClick={() => { scrollToSection("portfolio") }} className="hover:text-foreground transition">Portfolio</button></li>
+                <li><button onClick={() => { scrollToSection("contact") }} className="hover:text-foreground transition">Kontakt</button></li>
               </ul>
             </div>
           </div>
