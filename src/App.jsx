@@ -8,8 +8,12 @@ import Home from './pages/Home.jsx';
 import ScrollToTopButton from "./components/wolfix/ScrollToTopButton";
 
 function App() {
-  const rawBasename = import.meta.env.VITE_ROUTER_BASENAME ?? import.meta.env.BASE_URL;
-  const basename = rawBasename && rawBasename !== './' ? rawBasename : '/';
+
+  const isGitHubPages = window.location.hostname.includes("github.io");
+
+  const basename = isGitHubPages
+    ? "/Portfolio"
+    : "/";
 
   return (
     <AuthProvider>
@@ -17,11 +21,12 @@ function App() {
         <Router basename={basename}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="https://wolfzix.github.io/Portfolio/" element={<Home />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
+
           <ScrollToTopButton />
         </Router>
+
         <Toaster />
       </QueryClientProvider>
     </AuthProvider>
