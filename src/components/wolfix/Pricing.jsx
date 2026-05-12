@@ -61,7 +61,7 @@ export default function Pricing() {
           </h2>
 
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-            Oferujemy elastyczne rozwiązania — jednorazowe projekty dla firm, które chcą pełnej własności, lub plany miesięczne, gdzie zarządzamy wszystkim za Ciebie.
+            Oferujemy elastyczne rozwiązania oraz ceny dopasowane do indywidualnych projektów — jednorazowe projekty dla firm, które chcą pełnej własności, lub plany miesięczne, gdzie zarządzamy wszystkim za Ciebie.
           </p>
         </motion.div>
 
